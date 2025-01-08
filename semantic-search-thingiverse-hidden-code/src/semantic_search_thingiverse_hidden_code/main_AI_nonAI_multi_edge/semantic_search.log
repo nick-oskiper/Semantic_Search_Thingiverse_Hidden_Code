@@ -1,0 +1,899 @@
+2024-11-04 14:45:43,928 [INFO] SpaCy Pipeline Components: ['tok2vec', 'tagger', 'parser', 'attribute_ruler', 'lemmatizer', 'ner']
+2024-11-04 14:45:43,942 [INFO] Starting semantic network construction process.
+2024-11-04 14:45:44,081 [ERROR] An unexpected error occurred while connecting to Neo4j: Cannot connect to any known routers
+2024-11-04 14:45:44,113 [INFO] Non-AI CSV Columns: ['id', 'summary']
+2024-11-04 14:45:44,123 [INFO] AI CSV Columns: ['id', 'description', 'name', 'category', 'tags']
+2024-11-04 14:45:44,128 [INFO] Number of AI models: 41
+2024-11-04 14:45:44,128 [INFO] Number of Non-AI models: 978
+2024-11-04 14:45:44,132 [INFO] Starting text preprocessing for Non-AI models...
+2024-11-04 14:45:44,134 [INFO] Extracting tags from Non-AI summaries...
+2024-11-04 14:45:44,174 [INFO] Extracting names from Non-AI summaries...
+2024-11-04 14:45:44,226 [INFO] Preprocessing Non-AI summaries...
+2024-11-04 14:46:03,787 [INFO] Completed text preprocessing for Non-AI models.
+2024-11-04 14:46:03,787 [INFO] Starting text preprocessing for AI models...
+2024-11-04 14:46:04,279 [INFO] Completed text preprocessing for AI models.
+2024-11-04 14:46:04,279 [INFO] Non-AI models with extracted names: 978/978
+2024-11-04 14:46:04,287 [INFO] AI models with names: 41/41
+2024-11-04 14:46:04,287 [INFO] Total models with names: 1019/1019
+2024-11-04 14:46:04,287 [INFO] Extracting key nouns and adjectives for Non-AI models...
+2024-11-04 14:46:22,817 [INFO] Completed extraction of key nouns and adjectives for Non-AI models.
+2024-11-04 14:46:22,822 [INFO] Extracting key nouns and adjectives for AI models...
+2024-11-04 14:46:23,133 [INFO] Completed extraction of key nouns and adjectives for AI models.
+2024-11-04 14:46:23,133 [INFO] Expanding nouns and adjectives with filtered synonyms for Non-AI models...
+2024-11-04 14:46:27,067 [INFO] Completed expanding synonyms for Non-AI models.
+2024-11-04 14:46:27,067 [INFO] Expanding nouns and adjectives with filtered synonyms for AI models...
+2024-11-04 14:46:27,099 [INFO] Completed expanding synonyms for AI models.
+2024-11-04 14:46:27,099 [INFO] Performing Named Entity Recognition (NER) for Non-AI models...
+2024-11-05 14:40:28,343 [INFO] SpaCy Pipeline Components: ['tok2vec', 'tagger', 'parser', 'attribute_ruler', 'lemmatizer', 'ner']
+2024-11-05 14:40:28,354 [INFO] Starting semantic network construction process.
+2024-11-05 14:40:29,541 [INFO] Successfully connected to Neo4j.
+2024-11-05 14:40:29,573 [INFO] Non-AI CSV Columns: ['id', 'summary']
+2024-11-05 14:40:29,573 [INFO] AI CSV Columns: ['id', 'description', 'name', 'category', 'tags']
+2024-11-05 14:40:29,573 [INFO] Number of AI models: 49
+2024-11-05 14:40:29,573 [INFO] Number of Non-AI models: 978
+2024-11-05 14:40:29,589 [INFO] Starting text preprocessing for Non-AI models...
+2024-11-05 14:40:29,589 [INFO] Extracting tags from Non-AI summaries...
+2024-11-05 14:40:29,605 [INFO] Extracting names from Non-AI summaries...
+2024-11-05 14:40:29,642 [INFO] Preprocessing Non-AI summaries...
+2024-11-05 14:40:39,588 [INFO] Completed text preprocessing for Non-AI models.
+2024-11-05 14:40:39,588 [INFO] Starting text preprocessing for AI models...
+2024-11-05 14:40:39,844 [INFO] Completed text preprocessing for AI models.
+2024-11-05 14:40:39,850 [INFO] Non-AI models with extracted names: 978/978
+2024-11-05 14:40:39,850 [INFO] AI models with names: 49/49
+2024-11-05 14:40:39,852 [INFO] Total models with names: 1027/1027
+2024-11-05 14:40:39,852 [INFO] Extracting key nouns and adjectives for Non-AI models...
+2024-11-05 14:40:48,359 [INFO] Completed extraction of key nouns and adjectives for Non-AI models.
+2024-11-05 14:40:48,359 [INFO] Extracting key nouns and adjectives for AI models...
+2024-11-05 14:40:48,581 [INFO] Completed extraction of key nouns and adjectives for AI models.
+2024-11-05 14:40:48,581 [INFO] Expanding nouns and adjectives with filtered synonyms for Non-AI models...
+2024-11-05 14:40:48,737 [INFO] Completed expanding synonyms for Non-AI models.
+2024-11-05 14:40:48,737 [INFO] Expanding nouns and adjectives with filtered synonyms for AI models...
+2024-11-05 14:40:48,737 [INFO] Completed expanding synonyms for AI models.
+2024-11-05 14:40:48,737 [INFO] Performing Named Entity Recognition (NER) for Non-AI models...
+2024-11-05 14:40:57,171 [INFO] Completed NER for Non-AI models.
+2024-11-05 14:40:57,171 [INFO] Performing Named Entity Recognition (NER) for AI models...
+2024-11-05 14:40:57,384 [INFO] Completed NER for AI models.
+2024-11-05 14:40:57,384 [INFO] Duplicating primary nouns and named entities with weight=2.0 for Non-AI models...
+2024-11-05 14:40:57,416 [INFO] Completed duplicating primary nouns and named entities for Non-AI models.
+2024-11-05 14:40:57,416 [INFO] Duplicating primary nouns and named entities with weight=2.0 for AI models...
+2024-11-05 14:40:57,416 [INFO] Completed duplicating primary nouns and named entities for AI models.
+2024-11-05 14:40:57,416 [INFO] Calculating similarity metrics...
+2024-11-05 14:40:57,416 [INFO] Computing TF-IDF vectors on weighted descriptions (nonai)...
+2024-11-05 14:40:57,607 [INFO] Completed TF-IDF computation.
+2024-11-05 14:40:57,607 [INFO] Computing cosine similarity matrix...
+2024-11-05 14:40:57,645 [INFO] Completed cosine similarity computation.
+2024-11-05 14:40:57,645 [INFO] Computing Sentence-BERT similarity (nonai)...
+2024-11-05 14:40:57,661 [INFO] Use pytorch device_name: cpu
+2024-11-05 14:40:57,661 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-05 14:41:14,032 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-05 14:41:14,033 [INFO] Computing TF-IDF vectors on weighted descriptions (ai)...
+2024-11-05 14:41:14,041 [INFO] Completed TF-IDF computation.
+2024-11-05 14:41:14,041 [INFO] Computing cosine similarity matrix...
+2024-11-05 14:41:14,043 [INFO] Completed cosine similarity computation.
+2024-11-05 14:41:14,043 [INFO] Computing Sentence-BERT similarity (ai)...
+2024-11-05 14:41:14,046 [INFO] Use pytorch device_name: cpu
+2024-11-05 14:41:14,047 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-05 14:41:15,713 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-05 14:41:15,713 [INFO] Computing tag similarity matrices using Jaccard similarity for Non-AI models...
+2024-11-05 14:41:16,283 [INFO] Completed tag similarity computation.
+2024-11-05 14:41:16,283 [INFO] Computing tag similarity matrices using Jaccard similarity for AI models...
+2024-11-05 14:41:16,297 [INFO] Completed tag similarity computation.
+2024-11-05 14:41:16,297 [INFO] Computing name similarity for all models...
+2024-11-05 14:41:16,299 [INFO] Computing name similarity using TF-IDF and cosine similarity...
+2024-11-05 14:41:16,309 [INFO] Completed name similarity computation.
+2024-11-05 14:41:16,309 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,317 [INFO] Threshold set at mean (0.0253) + 2*std (0.0437) = 0.1126
+2024-11-05 14:41:16,319 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,319 [INFO] Threshold set at mean (0.0064) + 2*std (0.0287) = 0.0639
+2024-11-05 14:41:16,319 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,331 [INFO] Threshold set at mean (0.3519) + 2*std (0.1205) = 0.5930
+2024-11-05 14:41:16,331 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,340 [INFO] Threshold set at mean (0.0086) + 2*std (0.0481) = 0.1048
+2024-11-05 14:41:16,340 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,340 [INFO] Threshold set at mean (0.0379) + 2*std (0.0614) = 0.1606
+2024-11-05 14:41:16,340 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,340 [INFO] Threshold set at mean (0.0050) + 2*std (0.0214) = 0.0477
+2024-11-05 14:41:16,340 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,340 [INFO] Threshold set at mean (0.3875) + 2*std (0.1200) = 0.6274
+2024-11-05 14:41:16,340 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-05 14:41:16,352 [INFO] Threshold set at mean (0.0086) + 2*std (0.0481) = 0.1048
+2024-11-05 14:41:16,352 [INFO] Constructing knowledge graph with embeddings...
+2024-11-05 14:41:16,352 [INFO] Creating Non-AI nodes in Neo4j with embeddings...
+2024-11-05 14:41:16,357 [INFO] Use pytorch device_name: cpu
+2024-11-05 14:41:16,357 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-05 14:41:35,379 [INFO] Completed creating Non-AI nodes with embeddings in Neo4j.
+2024-11-05 14:41:35,379 [INFO] Creating AI nodes in Neo4j with embeddings...
+2024-11-05 14:41:35,379 [INFO] Use pytorch device_name: cpu
+2024-11-05 14:41:35,379 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-05 14:41:37,117 [INFO] Completed creating AI nodes with embeddings in Neo4j.
+2024-11-05 14:41:37,117 [INFO] Creating Non-AI similarity edges in Neo4j in batches...
+2024-11-05 14:41:37,117 [INFO] Processing Non-AI relationship type: SIMILAR_SUMMARY_NONAI
+2024-11-05 14:42:51,315 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:43:46,938 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:44:40,332 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:45:34,103 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:46:26,814 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:47:18,032 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:48:10,261 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:49:00,686 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:49:51,979 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:50:43,204 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:51:33,726 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:52:25,329 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:53:14,996 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:54:04,936 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:54:54,922 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:55:45,896 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:56:14,940 [INFO] Inserted final batch of 560 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-05 14:56:14,942 [INFO] Total edges created for SIMILAR_SUMMARY_NONAI: 16560
+2024-11-05 14:56:14,942 [INFO] Processing Non-AI relationship type: SIMILAR_TAGS_NONAI
+2024-11-05 14:57:05,732 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 14:57:56,172 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 14:58:45,809 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 14:59:36,001 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:00:27,412 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:01:17,365 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:02:08,241 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:03:07,828 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:03:58,621 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:04:51,655 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:05:50,446 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:06:51,848 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:07:49,423 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:08:43,546 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:09:38,616 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:10:37,655 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:11:30,716 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:12:23,351 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:12:28,303 [INFO] Inserted final batch of 88 relationships for SIMILAR_TAGS_NONAI.
+2024-11-05 15:12:28,303 [INFO] Total edges created for SIMILAR_TAGS_NONAI: 18088
+2024-11-05 15:12:28,313 [INFO] Processing Non-AI relationship type: SIMILAR_EMBEDDING_NONAI
+2024-11-05 15:13:21,170 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:14:14,130 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:15:09,917 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:16:36,096 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:17:45,085 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:18:53,232 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:20:03,710 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:21:06,972 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:21:11,491 [INFO] Inserted final batch of 64 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-05 15:21:11,491 [INFO] Total edges created for SIMILAR_EMBEDDING_NONAI: 8064
+2024-11-05 15:21:11,491 [INFO] Processing Non-AI relationship type: SIMILAR_NAMES_ALL
+2024-11-05 15:22:19,769 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:23:30,160 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:24:40,847 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:25:52,132 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:26:59,123 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:28:07,173 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:29:11,563 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:30:14,300 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:31:18,129 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:32:23,211 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:33:27,316 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:34:29,511 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:35:30,796 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:36:32,607 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:37:50,112 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:38:08,304 [INFO] Inserted final batch of 227 relationships for SIMILAR_NAMES_ALL.
+2024-11-05 15:38:08,314 [INFO] Total edges created for SIMILAR_NAMES_ALL: 15227
+2024-11-05 15:38:08,314 [INFO] Completed Non-AI edge creation in Neo4j.
+2024-11-05 15:38:08,317 [INFO] Creating AI similarity edges in Neo4j in batches...
+2024-11-05 15:38:08,320 [INFO] Processing AI relationship type: SIMILAR_SUMMARY_AI
+2024-11-05 15:38:12,051 [INFO] Inserted final batch of 45 relationships for SIMILAR_SUMMARY_AI.
+2024-11-05 15:38:12,061 [INFO] Total edges created for SIMILAR_SUMMARY_AI: 45
+2024-11-05 15:38:12,061 [INFO] Processing AI relationship type: SIMILAR_TAGS_AI
+2024-11-05 15:38:17,493 [INFO] Inserted final batch of 67 relationships for SIMILAR_TAGS_AI.
+2024-11-05 15:38:17,493 [INFO] Total edges created for SIMILAR_TAGS_AI: 67
+2024-11-05 15:38:17,493 [INFO] Processing AI relationship type: SIMILAR_EMBEDDING_AI
+2024-11-05 15:38:19,635 [INFO] Inserted final batch of 23 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-05 15:38:19,635 [INFO] Total edges created for SIMILAR_EMBEDDING_AI: 23
+2024-11-05 15:38:19,635 [INFO] Completed AI edge creation in Neo4j.
+2024-11-05 15:38:19,635 [INFO] Pruning graph edges based on similarity thresholds...
+2024-11-05 15:38:20,030 [INFO] Pruned edges of type SIMILAR_SUMMARY_NONAI below threshold 0.11264154262911111.
+2024-11-05 15:38:20,286 [INFO] Pruned edges of type SIMILAR_TAGS_NONAI below threshold 0.06386230841430725.
+2024-11-05 15:38:20,431 [INFO] Pruned edges of type SIMILAR_EMBEDDING_NONAI below threshold 0.5929634124040604.
+2024-11-05 15:38:20,627 [INFO] Pruned edges of type SIMILAR_NAMES_ALL below threshold 0.10484964888708069.
+2024-11-05 15:38:20,740 [INFO] Pruned edges of type SIMILAR_SUMMARY_AI below threshold 0.16062151608443032.
+2024-11-05 15:38:20,853 [INFO] Pruned edges of type SIMILAR_TAGS_AI below threshold 0.04773879478022463.
+2024-11-05 15:38:20,981 [INFO] Pruned edges of type SIMILAR_EMBEDDING_AI below threshold 0.6273647844791412.
+2024-11-05 15:38:20,981 [INFO] Completed pruning of graph edges.
+2024-11-05 15:38:20,981 [INFO] Performing node clustering using NetworkX and Louvain method for summary_nonai...
+2024-11-05 15:38:21,386 [INFO] Detected 19 communities for summary_nonai.
+2024-11-05 15:38:21,386 [INFO] Updating Neo4j nodes with community labels...
+2024-11-05 15:38:22,228 [INFO] Completed updating community labels in Neo4j for summary_nonai.
+2024-11-05 15:38:22,228 [INFO] Performing node clustering using NetworkX and Louvain method for tags_nonai...
+2024-11-05 15:38:22,600 [INFO] Detected 109 communities for tags_nonai.
+2024-11-05 15:38:22,600 [INFO] Updating Neo4j nodes with community labels...
+2024-11-05 15:38:23,420 [INFO] Completed updating community labels in Neo4j for tags_nonai.
+2024-11-05 15:38:23,425 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_nonai...
+2024-11-05 15:38:23,813 [INFO] Detected 142 communities for embedding_nonai.
+2024-11-05 15:38:23,813 [INFO] Updating Neo4j nodes with community labels...
+2024-11-05 15:38:24,830 [INFO] Completed updating community labels in Neo4j for embedding_nonai.
+2024-11-05 15:38:24,830 [INFO] Performing node clustering using NetworkX and Louvain method for names_all...
+2024-11-05 15:38:24,846 [ERROR] Error during node clustering for names_all: list index out of range
+2024-11-05 15:38:24,846 [INFO] Performing node clustering using NetworkX and Louvain method for summary_ai...
+2024-11-05 15:38:24,846 [INFO] Detected 22 communities for summary_ai.
+2024-11-05 15:38:24,846 [INFO] Updating Neo4j nodes with community labels...
+2024-11-05 15:38:25,006 [INFO] Completed updating community labels in Neo4j for summary_ai.
+2024-11-05 15:38:25,006 [INFO] Performing node clustering using NetworkX and Louvain method for tags_ai...
+2024-11-05 15:38:25,006 [INFO] Detected 19 communities for tags_ai.
+2024-11-05 15:38:25,006 [INFO] Updating Neo4j nodes with community labels...
+2024-11-05 15:38:25,150 [INFO] Completed updating community labels in Neo4j for tags_ai.
+2024-11-05 15:38:25,150 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_ai...
+2024-11-05 15:38:25,160 [INFO] Detected 32 communities for embedding_ai.
+2024-11-05 15:38:25,160 [INFO] Updating Neo4j nodes with community labels...
+2024-11-05 15:38:25,310 [INFO] Completed updating community labels in Neo4j for embedding_ai.
+2024-11-05 15:38:25,310 [INFO] Creating 'SIMILAR_NAMES' relationships based on extracted names...
+2024-11-05 15:38:29,307 [INFO] Inserted total 'SIMILAR_NAMES' relationships: 52
+2024-11-05 15:38:29,307 [INFO] Knowledge graph construction complete.
+2024-11-11 16:07:48,504 [INFO] SpaCy Pipeline Components: ['tok2vec', 'tagger', 'parser', 'attribute_ruler', 'lemmatizer', 'ner']
+2024-11-11 16:07:48,504 [INFO] Starting semantic network construction process.
+2024-11-11 16:07:49,806 [INFO] Successfully connected to Neo4j.
+2024-11-11 16:07:49,821 [INFO] Non-AI CSV Columns: ['id', 'summary']
+2024-11-11 16:07:49,831 [INFO] AI CSV Columns: ['id', 'description', 'name', 'category', 'tags']
+2024-11-11 16:07:49,837 [INFO] Number of AI models: 539
+2024-11-11 16:07:49,837 [INFO] Number of Non-AI models: 978
+2024-11-11 16:07:49,837 [INFO] Starting text preprocessing for Non-AI models...
+2024-11-11 16:07:49,837 [INFO] Extracting tags from Non-AI summaries...
+2024-11-11 16:07:49,861 [INFO] Extracting names from Non-AI summaries...
+2024-11-11 16:07:49,895 [INFO] Preprocessing Non-AI summaries...
+2024-11-11 16:08:00,259 [INFO] Completed text preprocessing for Non-AI models.
+2024-11-11 16:08:00,259 [INFO] Starting text preprocessing for AI models...
+2024-11-11 16:08:03,151 [INFO] Completed text preprocessing for AI models.
+2024-11-11 16:08:03,151 [INFO] Non-AI models with extracted names: 978/978
+2024-11-11 16:08:03,151 [INFO] AI models with names: 539/539
+2024-11-11 16:08:03,167 [INFO] Total models with names: 1517/1517
+2024-11-11 16:08:03,167 [INFO] Extracting key nouns and adjectives for Non-AI models...
+2024-11-11 16:08:11,732 [INFO] Completed extraction of key nouns and adjectives for Non-AI models.
+2024-11-11 16:08:11,732 [INFO] Extracting key nouns and adjectives for AI models...
+2024-11-11 16:08:14,368 [INFO] Completed extraction of key nouns and adjectives for AI models.
+2024-11-11 16:08:14,368 [INFO] Expanding nouns and adjectives with filtered synonyms for Non-AI models...
+2024-11-11 16:08:16,805 [INFO] Completed expanding synonyms for Non-AI models.
+2024-11-11 16:08:16,805 [INFO] Expanding nouns and adjectives with filtered synonyms for AI models...
+2024-11-11 16:08:16,853 [INFO] Completed expanding synonyms for AI models.
+2024-11-11 16:08:16,853 [INFO] Performing Named Entity Recognition (NER) for Non-AI models...
+2024-11-11 16:08:25,101 [INFO] Completed NER for Non-AI models.
+2024-11-11 16:08:25,101 [INFO] Performing Named Entity Recognition (NER) for AI models...
+2024-11-11 16:08:27,783 [INFO] Completed NER for AI models.
+2024-11-11 16:08:27,783 [INFO] Duplicating primary nouns and named entities with weight=2.0 for Non-AI models...
+2024-11-11 16:08:27,814 [INFO] Completed duplicating primary nouns and named entities for Non-AI models.
+2024-11-11 16:08:27,814 [INFO] Duplicating primary nouns and named entities with weight=2.0 for AI models...
+2024-11-11 16:08:27,825 [INFO] Completed duplicating primary nouns and named entities for AI models.
+2024-11-11 16:08:27,830 [INFO] Calculating similarity metrics...
+2024-11-11 16:08:27,830 [INFO] Computing TF-IDF vectors on weighted descriptions (nonai)...
+2024-11-11 16:08:27,990 [INFO] Completed TF-IDF computation.
+2024-11-11 16:08:27,990 [INFO] Computing cosine similarity matrix...
+2024-11-11 16:08:28,038 [INFO] Completed cosine similarity computation.
+2024-11-11 16:08:28,038 [INFO] Computing Sentence-BERT similarity (nonai)...
+2024-11-11 16:08:28,038 [INFO] Use pytorch device_name: cpu
+2024-11-11 16:08:28,038 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-11 16:08:45,810 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-11 16:08:45,811 [INFO] Computing TF-IDF vectors on weighted descriptions (ai)...
+2024-11-11 16:08:45,872 [INFO] Completed TF-IDF computation.
+2024-11-11 16:08:45,873 [INFO] Computing cosine similarity matrix...
+2024-11-11 16:08:45,885 [INFO] Completed cosine similarity computation.
+2024-11-11 16:08:45,885 [INFO] Computing Sentence-BERT similarity (ai)...
+2024-11-11 16:08:45,888 [INFO] Use pytorch device_name: cpu
+2024-11-11 16:08:45,888 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-11 16:08:56,750 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-11 16:08:56,751 [INFO] Computing tag similarity matrices using Jaccard similarity for Non-AI models...
+2024-11-11 16:08:57,621 [INFO] Completed tag similarity computation.
+2024-11-11 16:08:57,630 [INFO] Computing tag similarity matrices using Jaccard similarity for AI models...
+2024-11-11 16:08:57,862 [INFO] Completed tag similarity computation.
+2024-11-11 16:08:57,862 [INFO] Computing name similarity for all models...
+2024-11-11 16:08:57,881 [INFO] Computing name similarity using TF-IDF and cosine similarity...
+2024-11-11 16:08:57,897 [INFO] Completed name similarity computation.
+2024-11-11 16:08:57,897 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,913 [INFO] Threshold set at mean (0.0238) + 2*std (0.0434) = 0.1107
+2024-11-11 16:08:57,913 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,913 [INFO] Threshold set at mean (0.0064) + 2*std (0.0287) = 0.0639
+2024-11-11 16:08:57,913 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,929 [INFO] Threshold set at mean (0.3304) + 2*std (0.1219) = 0.5742
+2024-11-11 16:08:57,929 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,945 [INFO] Threshold set at mean (0.0171) + 2*std (0.0490) = 0.1150
+2024-11-11 16:08:57,945 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,945 [INFO] Threshold set at mean (0.0380) + 2*std (0.0514) = 0.1409
+2024-11-11 16:08:57,945 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,945 [INFO] Threshold set at mean (0.0023) + 2*std (0.0168) = 0.0360
+2024-11-11 16:08:57,945 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,945 [INFO] Threshold set at mean (0.4505) + 2*std (0.1145) = 0.6794
+2024-11-11 16:08:57,945 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-11 16:08:57,961 [INFO] Threshold set at mean (0.0171) + 2*std (0.0490) = 0.1150
+2024-11-11 16:08:57,961 [INFO] Constructing knowledge graph with embeddings...
+2024-11-11 16:08:57,961 [INFO] Creating Non-AI nodes in Neo4j with embeddings...
+2024-11-11 16:08:57,977 [INFO] Use pytorch device_name: cpu
+2024-11-11 16:08:57,977 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-11 16:09:20,367 [INFO] Completed creating Non-AI nodes with embeddings in Neo4j.
+2024-11-11 16:09:20,377 [INFO] Creating AI nodes in Neo4j with embeddings...
+2024-11-11 16:09:20,377 [INFO] Use pytorch device_name: cpu
+2024-11-11 16:09:20,377 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-11 16:09:33,872 [INFO] Completed creating AI nodes with embeddings in Neo4j.
+2024-11-11 16:09:33,877 [INFO] Creating Non-AI similarity edges in Neo4j in batches...
+2024-11-11 16:09:33,881 [INFO] Processing Non-AI relationship type: SIMILAR_SUMMARY_NONAI
+2024-11-11 16:11:06,751 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:12:52,470 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:14:26,430 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:16:19,247 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:18:10,339 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:20:00,490 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:22:08,562 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:24:24,641 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:26:27,948 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:28:23,748 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:30:18,833 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:32:18,596 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:34:23,493 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:36:12,834 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:38:16,815 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:40:17,537 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:41:13,893 [INFO] Inserted final batch of 476 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-11 16:41:13,895 [INFO] Total edges created for SIMILAR_SUMMARY_NONAI: 16476
+2024-11-11 16:41:13,898 [INFO] Processing Non-AI relationship type: SIMILAR_TAGS_NONAI
+2024-11-11 16:43:38,143 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:45:21,811 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:47:14,735 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:49:00,283 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:50:59,886 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:53:00,206 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:54:56,460 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:56:51,479 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 16:58:56,204 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:01:19,259 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:03:19,888 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:05:11,896 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:07:02,240 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:08:51,195 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:10:48,057 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:12:38,588 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:13:30,654 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_NONAI): Failed to send Bolt messages
+2024-11-11 17:13:30,658 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:13:30,688 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:30,688 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:13:30,700 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:30,702 [INFO] Inserted final batch of 88 relationships for SIMILAR_TAGS_NONAI.
+2024-11-11 17:13:30,706 [INFO] Total edges created for SIMILAR_TAGS_NONAI: 18088
+2024-11-11 17:13:30,729 [INFO] Processing Non-AI relationship type: SIMILAR_EMBEDDING_NONAI
+2024-11-11 17:13:30,864 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:30,866 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:30,970 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:30,973 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,056 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,061 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,103 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,103 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,153 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,157 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,212 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,221 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,309 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,317 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,349 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,357 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,376 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_NONAI): Cannot connect to any known routers
+2024-11-11 17:13:31,376 [INFO] Inserted final batch of 369 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-11 17:13:31,376 [INFO] Total edges created for SIMILAR_EMBEDDING_NONAI: 8369
+2024-11-11 17:13:31,382 [INFO] Processing Non-AI relationship type: SIMILAR_NAMES_ALL
+2024-11-11 17:13:31,459 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,461 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,516 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,518 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,585 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,585 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,642 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,645 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,703 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,709 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,752 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,754 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,797 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,797 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,838 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,840 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,867 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,867 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,876 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,876 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,886 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,888 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,899 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,899 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,914 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,914 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,934 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES_ALL): Cannot connect to any known routers
+2024-11-11 17:13:31,934 [INFO] Inserted final batch of 516 relationships for SIMILAR_NAMES_ALL.
+2024-11-11 17:13:31,942 [INFO] Total edges created for SIMILAR_NAMES_ALL: 13516
+2024-11-11 17:13:31,944 [INFO] Completed Non-AI edge creation in Neo4j.
+2024-11-11 17:13:31,944 [INFO] Creating AI similarity edges in Neo4j in batches...
+2024-11-11 17:13:31,946 [INFO] Processing AI relationship type: SIMILAR_SUMMARY_AI
+2024-11-11 17:13:31,985 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:31,989 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,027 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,029 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,055 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,063 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,088 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,092 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,116 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,116 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,137 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,147 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,147 [ERROR] Error inserting batch of relationships (SIMILAR_SUMMARY_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,157 [INFO] Inserted final batch of 100 relationships for SIMILAR_SUMMARY_AI.
+2024-11-11 17:13:32,157 [INFO] Total edges created for SIMILAR_SUMMARY_AI: 6100
+2024-11-11 17:13:32,157 [INFO] Processing AI relationship type: SIMILAR_TAGS_AI
+2024-11-11 17:13:32,210 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,214 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-11 17:13:32,242 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,242 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-11 17:13:32,293 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,297 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-11 17:13:32,305 [ERROR] Error inserting batch of relationships (SIMILAR_TAGS_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,307 [INFO] Inserted final batch of 32 relationships for SIMILAR_TAGS_AI.
+2024-11-11 17:13:32,309 [INFO] Total edges created for SIMILAR_TAGS_AI: 3032
+2024-11-11 17:13:32,311 [INFO] Processing AI relationship type: SIMILAR_EMBEDDING_AI
+2024-11-11 17:13:32,394 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,395 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-11 17:13:32,433 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,433 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-11 17:13:32,478 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,483 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-11 17:13:32,509 [ERROR] Error inserting batch of relationships (SIMILAR_EMBEDDING_AI): Cannot connect to any known routers
+2024-11-11 17:13:32,512 [INFO] Inserted final batch of 198 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-11 17:13:32,514 [INFO] Total edges created for SIMILAR_EMBEDDING_AI: 3198
+2024-11-11 17:13:32,514 [INFO] Completed AI edge creation in Neo4j.
+2024-11-11 17:13:32,518 [INFO] Pruning graph edges based on similarity thresholds...
+2024-11-11 17:13:32,521 [ERROR] Error during graph pruning: Cannot connect to any known routers
+2024-11-11 17:13:32,521 [INFO] Performing node clustering using NetworkX and Louvain method for summary_nonai...
+2024-11-11 17:13:33,822 [INFO] Detected 20 communities for summary_nonai.
+2024-11-11 17:13:33,827 [INFO] Updating Neo4j nodes with community labels...
+2024-11-11 17:13:33,834 [ERROR] Error during node clustering for summary_nonai: Cannot connect to any known routers
+2024-11-11 17:13:33,834 [INFO] Performing node clustering using NetworkX and Louvain method for tags_nonai...
+2024-11-11 17:13:34,930 [INFO] Detected 107 communities for tags_nonai.
+2024-11-11 17:13:34,935 [INFO] Updating Neo4j nodes with community labels...
+2024-11-11 17:13:34,944 [ERROR] Error during node clustering for tags_nonai: Cannot connect to any known routers
+2024-11-11 17:13:34,946 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_nonai...
+2024-11-11 17:13:36,107 [INFO] Detected 142 communities for embedding_nonai.
+2024-11-11 17:13:36,110 [INFO] Updating Neo4j nodes with community labels...
+2024-11-11 17:13:36,111 [ERROR] Error during node clustering for embedding_nonai: Cannot connect to any known routers
+2024-11-11 17:13:36,111 [INFO] Performing node clustering using NetworkX and Louvain method for names_all...
+2024-11-11 17:13:36,128 [ERROR] Error during node clustering for names_all: list index out of range
+2024-11-11 17:13:36,138 [INFO] Performing node clustering using NetworkX and Louvain method for summary_ai...
+2024-11-11 17:13:36,459 [INFO] Detected 11 communities for summary_ai.
+2024-11-11 17:13:36,459 [INFO] Updating Neo4j nodes with community labels...
+2024-11-11 17:13:36,470 [ERROR] Error during node clustering for summary_ai: Cannot connect to any known routers
+2024-11-11 17:13:36,472 [INFO] Performing node clustering using NetworkX and Louvain method for tags_ai...
+2024-11-11 17:13:36,681 [INFO] Detected 58 communities for tags_ai.
+2024-11-11 17:13:36,681 [INFO] Updating Neo4j nodes with community labels...
+2024-11-11 17:13:36,697 [ERROR] Error during node clustering for tags_ai: Cannot connect to any known routers
+2024-11-11 17:13:36,697 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_ai...
+2024-11-11 17:13:37,042 [INFO] Detected 107 communities for embedding_ai.
+2024-11-11 17:13:37,044 [INFO] Updating Neo4j nodes with community labels...
+2024-11-11 17:13:37,044 [ERROR] Error during node clustering for embedding_ai: Cannot connect to any known routers
+2024-11-11 17:13:37,044 [INFO] Creating 'SIMILAR_NAMES' relationships based on extracted names...
+2024-11-11 17:13:37,159 [ERROR] Error inserting batch of relationships (SIMILAR_NAMES): Cannot connect to any known routers
+2024-11-11 17:13:37,169 [INFO] Inserted total 'SIMILAR_NAMES' relationships: 55
+2024-11-11 17:13:37,171 [INFO] Knowledge graph construction complete.
+2024-11-21 14:25:43,547 [INFO] SpaCy Pipeline Components: ['tok2vec', 'tagger', 'parser', 'attribute_ruler', 'lemmatizer', 'ner']
+2024-11-21 14:25:43,564 [INFO] Starting semantic network construction process.
+2024-11-21 14:25:44,397 [INFO] Successfully connected to Neo4j.
+2024-11-21 14:25:44,449 [INFO] Non-AI CSV Columns: ['id', 'summary']
+2024-11-21 14:25:44,471 [INFO] AI CSV Columns: ['id', 'description', 'name', 'category', 'tags']
+2024-11-21 14:25:44,487 [INFO] Number of AI models: 539
+2024-11-21 14:25:44,489 [INFO] Number of Non-AI models: 978
+2024-11-21 14:25:44,491 [INFO] Starting text preprocessing for Non-AI models...
+2024-11-21 14:25:44,491 [INFO] Extracting tags from Non-AI summaries...
+2024-11-21 14:25:44,557 [INFO] Extracting names from Non-AI summaries...
+2024-11-21 14:25:44,641 [INFO] Preprocessing Non-AI summaries...
+2024-11-21 14:27:12,156 [INFO] Completed text preprocessing for Non-AI models.
+2024-11-21 14:27:12,164 [INFO] Starting text preprocessing for AI models...
+2024-11-21 14:27:33,690 [INFO] Completed text preprocessing for AI models.
+2024-11-21 14:27:33,694 [INFO] Non-AI models with extracted names: 978/978
+2024-11-21 14:27:33,700 [INFO] AI models with names: 539/539
+2024-11-21 14:27:33,702 [INFO] Total models with names: 1517/1517
+2024-11-21 14:27:33,711 [INFO] Extracting key nouns and adjectives for Non-AI models...
+2024-11-21 14:28:40,670 [INFO] Completed extraction of key nouns and adjectives for Non-AI models.
+2024-11-21 14:28:40,670 [INFO] Extracting key nouns and adjectives for AI models...
+2024-11-21 14:28:55,726 [INFO] Completed extraction of key nouns and adjectives for AI models.
+2024-11-21 14:28:55,736 [INFO] Expanding nouns and adjectives with filtered synonyms for Non-AI models...
+2024-11-21 14:29:04,146 [INFO] Completed expanding synonyms for Non-AI models.
+2024-11-21 14:29:04,155 [INFO] Expanding nouns and adjectives with filtered synonyms for AI models...
+2024-11-21 14:29:04,419 [INFO] Completed expanding synonyms for AI models.
+2024-11-21 14:29:04,419 [INFO] Performing Named Entity Recognition (NER) for Non-AI models...
+2024-11-21 14:29:48,825 [INFO] Completed NER for Non-AI models.
+2024-11-21 14:29:48,827 [INFO] Performing Named Entity Recognition (NER) for AI models...
+2024-11-21 14:29:52,521 [INFO] Completed NER for AI models.
+2024-11-21 14:29:52,521 [INFO] Duplicating primary nouns and named entities with weight=2.0 for Non-AI models...
+2024-11-21 14:29:52,556 [INFO] Completed duplicating primary nouns and named entities for Non-AI models.
+2024-11-21 14:29:52,556 [INFO] Duplicating primary nouns and named entities with weight=2.0 for AI models...
+2024-11-21 14:29:52,571 [INFO] Completed duplicating primary nouns and named entities for AI models.
+2024-11-21 14:29:52,571 [INFO] Calculating similarity metrics...
+2024-11-21 14:29:52,571 [INFO] Computing TF-IDF vectors on weighted descriptions (nonai)...
+2024-11-21 14:29:52,871 [INFO] Completed TF-IDF computation.
+2024-11-21 14:29:52,871 [INFO] Computing cosine similarity matrix...
+2024-11-21 14:29:52,928 [INFO] Completed cosine similarity computation.
+2024-11-21 14:29:52,928 [INFO] Computing Sentence-BERT similarity (nonai)...
+2024-11-21 14:29:52,933 [INFO] Use pytorch device_name: cpu
+2024-11-21 14:29:52,935 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-21 14:30:45,529 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-21 14:30:45,530 [INFO] Computing TF-IDF vectors on weighted descriptions (ai)...
+2024-11-21 14:30:45,590 [INFO] Completed TF-IDF computation.
+2024-11-21 14:30:45,591 [INFO] Computing cosine similarity matrix...
+2024-11-21 14:30:45,604 [INFO] Completed cosine similarity computation.
+2024-11-21 14:30:45,604 [INFO] Computing Sentence-BERT similarity (ai)...
+2024-11-21 14:30:45,607 [INFO] Use pytorch device_name: cpu
+2024-11-21 14:30:45,608 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-21 14:30:55,242 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-21 14:30:55,243 [INFO] Computing tag similarity matrices using Jaccard similarity for Non-AI models...
+2024-11-21 14:30:56,307 [INFO] Completed tag similarity computation.
+2024-11-21 14:30:56,309 [INFO] Computing tag similarity matrices using Jaccard similarity for AI models...
+2024-11-21 14:30:56,678 [INFO] Completed tag similarity computation.
+2024-11-21 14:30:56,679 [INFO] Computing name similarity for all models...
+2024-11-21 14:30:56,683 [INFO] Computing name similarity using TF-IDF and cosine similarity...
+2024-11-21 14:30:56,724 [INFO] Completed name similarity computation.
+2024-11-21 14:30:56,726 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,738 [INFO] Threshold set at mean (0.0236) + 2*std (0.0436) = 0.1107
+2024-11-21 14:30:56,739 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,751 [INFO] Threshold set at mean (0.0064) + 2*std (0.0287) = 0.0639
+2024-11-21 14:30:56,753 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,763 [INFO] Threshold set at mean (0.3278) + 2*std (0.1219) = 0.5715
+2024-11-21 14:30:56,764 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,805 [INFO] Threshold set at mean (0.0171) + 2*std (0.0490) = 0.1150
+2024-11-21 14:30:56,809 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,817 [INFO] Threshold set at mean (0.0380) + 2*std (0.0515) = 0.1409
+2024-11-21 14:30:56,818 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,825 [INFO] Threshold set at mean (0.0023) + 2*std (0.0168) = 0.0360
+2024-11-21 14:30:56,826 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,832 [INFO] Threshold set at mean (0.4461) + 2*std (0.1138) = 0.6736
+2024-11-21 14:30:56,834 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-21 14:30:56,872 [INFO] Threshold set at mean (0.0171) + 2*std (0.0490) = 0.1150
+2024-11-21 14:30:56,874 [INFO] Constructing knowledge graph with embeddings...
+2024-11-21 14:30:56,875 [INFO] Creating Non-AI nodes in Neo4j with embeddings...
+2024-11-21 14:30:56,879 [INFO] Use pytorch device_name: cpu
+2024-11-21 14:30:56,880 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-21 14:31:17,564 [INFO] Completed creating Non-AI nodes with embeddings in Neo4j.
+2024-11-21 14:31:17,570 [INFO] Creating AI nodes in Neo4j with embeddings...
+2024-11-21 14:31:17,576 [INFO] Use pytorch device_name: cpu
+2024-11-21 14:31:17,578 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-21 14:31:28,969 [INFO] Completed creating AI nodes with embeddings in Neo4j.
+2024-11-21 14:31:28,973 [INFO] Creating Non-AI similarity edges in Neo4j in batches...
+2024-11-21 14:31:28,975 [INFO] Processing Non-AI relationship type: SIMILAR_SUMMARY_NONAI
+2024-11-21 14:32:36,663 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:33:40,967 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:34:36,951 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:35:33,511 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:36:29,767 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:37:24,692 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:38:22,688 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:39:19,906 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:40:19,753 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:41:21,093 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:42:28,807 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:43:31,176 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:44:26,830 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:45:23,622 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:46:18,926 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:47:14,760 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:47:31,805 [INFO] Inserted final batch of 314 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-21 14:47:31,807 [INFO] Total edges created for SIMILAR_SUMMARY_NONAI: 16314
+2024-11-21 14:47:31,809 [INFO] Processing Non-AI relationship type: SIMILAR_TAGS_NONAI
+2024-11-21 14:48:28,656 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:49:38,886 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:50:45,241 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:51:47,031 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:52:54,323 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:54:16,690 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:55:34,692 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:56:51,047 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:58:04,217 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 14:59:17,298 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:00:35,212 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:01:47,931 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:03:00,161 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:04:13,126 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:05:24,487 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:06:37,083 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:07:52,174 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:09:04,232 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:09:10,728 [INFO] Inserted final batch of 88 relationships for SIMILAR_TAGS_NONAI.
+2024-11-21 15:09:10,730 [INFO] Total edges created for SIMILAR_TAGS_NONAI: 18088
+2024-11-21 15:09:10,731 [INFO] Processing Non-AI relationship type: SIMILAR_EMBEDDING_NONAI
+2024-11-21 15:10:23,735 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:12:06,140 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:13:21,831 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:14:40,431 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:15:54,066 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:17:09,453 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:18:22,359 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:19:37,345 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:20:23,116 [INFO] Inserted final batch of 608 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-21 15:20:23,118 [INFO] Total edges created for SIMILAR_EMBEDDING_NONAI: 8608
+2024-11-21 15:20:23,120 [INFO] Processing Non-AI relationship type: SIMILAR_NAMES_ALL
+2024-11-21 15:21:48,862 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:23:19,664 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:24:53,400 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:26:18,360 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:27:19,606 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:28:33,981 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:29:28,049 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:30:20,931 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:31:17,309 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:32:09,825 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:33:00,268 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:33:51,676 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:34:42,558 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:35:08,808 [INFO] Inserted final batch of 516 relationships for SIMILAR_NAMES_ALL.
+2024-11-21 15:35:08,810 [INFO] Total edges created for SIMILAR_NAMES_ALL: 13516
+2024-11-21 15:35:08,812 [INFO] Completed Non-AI edge creation in Neo4j.
+2024-11-21 15:35:08,813 [INFO] Creating AI similarity edges in Neo4j in batches...
+2024-11-21 15:35:08,816 [INFO] Processing AI relationship type: SIMILAR_SUMMARY_AI
+2024-11-21 15:36:00,189 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:36:51,443 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:37:49,123 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:38:53,987 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:39:57,585 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:41:03,237 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:41:09,714 [INFO] Inserted final batch of 93 relationships for SIMILAR_SUMMARY_AI.
+2024-11-21 15:41:09,716 [INFO] Total edges created for SIMILAR_SUMMARY_AI: 6093
+2024-11-21 15:41:09,718 [INFO] Processing AI relationship type: SIMILAR_TAGS_AI
+2024-11-21 15:42:15,569 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-21 15:43:26,333 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-21 15:44:32,251 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-21 15:44:34,743 [INFO] Inserted final batch of 32 relationships for SIMILAR_TAGS_AI.
+2024-11-21 15:44:34,745 [INFO] Total edges created for SIMILAR_TAGS_AI: 3032
+2024-11-21 15:44:34,748 [INFO] Processing AI relationship type: SIMILAR_EMBEDDING_AI
+2024-11-21 15:45:38,458 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-21 15:46:44,579 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-21 15:48:13,065 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-21 15:48:34,841 [INFO] Inserted final batch of 380 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-21 15:48:34,843 [INFO] Total edges created for SIMILAR_EMBEDDING_AI: 3380
+2024-11-21 15:48:34,845 [INFO] Completed AI edge creation in Neo4j.
+2024-11-21 15:48:34,848 [INFO] Pruning graph edges based on similarity thresholds...
+2024-11-21 15:48:35,356 [INFO] Pruned edges of type SIMILAR_SUMMARY_NONAI below threshold 0.11070263091585444.
+2024-11-21 15:48:35,659 [INFO] Pruned edges of type SIMILAR_TAGS_NONAI below threshold 0.06386230841430725.
+2024-11-21 15:48:35,823 [INFO] Pruned edges of type SIMILAR_EMBEDDING_NONAI below threshold 0.5715160369873047.
+2024-11-21 15:48:36,008 [INFO] Pruned edges of type SIMILAR_NAMES_ALL below threshold 0.11499804157089621.
+2024-11-21 15:48:36,151 [INFO] Pruned edges of type SIMILAR_SUMMARY_AI below threshold 0.14089660372966487.
+2024-11-21 15:48:36,318 [INFO] Pruned edges of type SIMILAR_TAGS_AI below threshold 0.0359668147317035.
+2024-11-21 15:48:36,439 [INFO] Pruned edges of type SIMILAR_EMBEDDING_AI below threshold 0.6736090779304504.
+2024-11-21 15:48:36,441 [INFO] Completed pruning of graph edges.
+2024-11-21 15:48:36,442 [INFO] Performing node clustering using NetworkX and Louvain method for summary_nonai...
+2024-11-21 15:48:37,063 [INFO] Detected 18 communities for summary_nonai.
+2024-11-21 15:48:37,065 [INFO] Updating Neo4j nodes with community labels...
+2024-11-21 15:48:37,805 [INFO] Completed updating community labels in Neo4j for summary_nonai.
+2024-11-21 15:48:37,806 [INFO] Performing node clustering using NetworkX and Louvain method for tags_nonai...
+2024-11-21 15:48:38,146 [INFO] Detected 109 communities for tags_nonai.
+2024-11-21 15:48:38,147 [INFO] Updating Neo4j nodes with community labels...
+2024-11-21 15:48:38,897 [INFO] Completed updating community labels in Neo4j for tags_nonai.
+2024-11-21 15:48:38,899 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_nonai...
+2024-11-21 15:48:39,291 [INFO] Detected 143 communities for embedding_nonai.
+2024-11-21 15:48:39,291 [INFO] Updating Neo4j nodes with community labels...
+2024-11-21 15:48:40,022 [INFO] Completed updating community labels in Neo4j for embedding_nonai.
+2024-11-21 15:48:40,024 [INFO] Performing node clustering using NetworkX and Louvain method for names_all...
+2024-11-21 15:48:40,037 [ERROR] Error during node clustering for names_all: list index out of range
+2024-11-21 15:48:40,039 [INFO] Performing node clustering using NetworkX and Louvain method for summary_ai...
+2024-11-21 15:48:40,173 [INFO] Detected 10 communities for summary_ai.
+2024-11-21 15:48:40,173 [INFO] Updating Neo4j nodes with community labels...
+2024-11-21 15:48:40,643 [INFO] Completed updating community labels in Neo4j for summary_ai.
+2024-11-21 15:48:40,644 [INFO] Performing node clustering using NetworkX and Louvain method for tags_ai...
+2024-11-21 15:48:40,749 [INFO] Detected 59 communities for tags_ai.
+2024-11-21 15:48:40,749 [INFO] Updating Neo4j nodes with community labels...
+2024-11-21 15:48:41,235 [INFO] Completed updating community labels in Neo4j for tags_ai.
+2024-11-21 15:48:41,237 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_ai...
+2024-11-21 15:48:41,375 [INFO] Detected 99 communities for embedding_ai.
+2024-11-21 15:48:41,375 [INFO] Updating Neo4j nodes with community labels...
+2024-11-21 15:48:41,904 [INFO] Completed updating community labels in Neo4j for embedding_ai.
+2024-11-21 15:48:41,906 [INFO] Creating 'SIMILAR_NAMES' relationships based on extracted names...
+2024-11-21 15:48:44,844 [INFO] Inserted total 'SIMILAR_NAMES' relationships: 55
+2024-11-21 15:48:44,846 [INFO] Knowledge graph construction complete.
+2024-11-26 13:17:01,192 [INFO] SpaCy Pipeline Components: ['tok2vec', 'tagger', 'parser', 'attribute_ruler', 'lemmatizer', 'ner']
+2024-11-26 13:17:01,200 [INFO] Starting semantic network construction process.
+2024-11-26 13:17:01,734 [INFO] Successfully connected to Neo4j.
+2024-11-26 13:17:01,760 [INFO] Non-AI CSV Columns: ['id', 'summary']
+2024-11-26 13:17:01,769 [INFO] AI CSV Columns: ['id', 'description', 'name', 'category', 'tags']
+2024-11-26 13:17:01,773 [INFO] Number of AI models: 539
+2024-11-26 13:17:01,774 [INFO] Number of Non-AI models: 978
+2024-11-26 13:17:01,775 [INFO] Starting text preprocessing for Non-AI models...
+2024-11-26 13:17:01,776 [INFO] Extracting tags from Non-AI summaries...
+2024-11-26 13:17:01,803 [INFO] Extracting names from Non-AI summaries...
+2024-11-26 13:17:01,843 [INFO] Preprocessing Non-AI summaries...
+2024-11-26 13:17:14,742 [INFO] Completed text preprocessing for Non-AI models.
+2024-11-26 13:17:14,742 [INFO] Starting text preprocessing for AI models...
+2024-11-26 13:17:18,435 [INFO] Completed text preprocessing for AI models.
+2024-11-26 13:17:18,436 [INFO] Non-AI models with extracted names: 978/978
+2024-11-26 13:17:18,437 [INFO] AI models with names: 539/539
+2024-11-26 13:17:18,437 [INFO] Total models with names: 1517/1517
+2024-11-26 13:17:18,438 [INFO] Extracting key nouns and adjectives for Non-AI models...
+2024-11-26 13:17:29,347 [INFO] Completed extraction of key nouns and adjectives for Non-AI models.
+2024-11-26 13:17:29,348 [INFO] Extracting key nouns and adjectives for AI models...
+2024-11-26 13:17:32,736 [INFO] Completed extraction of key nouns and adjectives for AI models.
+2024-11-26 13:17:32,737 [INFO] Expanding nouns and adjectives with filtered synonyms for Non-AI models...
+2024-11-26 13:17:35,471 [INFO] Completed expanding synonyms for Non-AI models.
+2024-11-26 13:17:35,472 [INFO] Expanding nouns and adjectives with filtered synonyms for AI models...
+2024-11-26 13:17:35,543 [INFO] Completed expanding synonyms for AI models.
+2024-11-26 13:17:35,544 [INFO] Performing Named Entity Recognition (NER) for Non-AI models...
+2024-11-26 13:17:46,556 [INFO] Completed NER for Non-AI models.
+2024-11-26 13:17:46,557 [INFO] Performing Named Entity Recognition (NER) for AI models...
+2024-11-26 13:17:49,850 [INFO] Completed NER for AI models.
+2024-11-26 13:17:49,851 [INFO] Duplicating primary nouns and named entities with weight=2.0 for Non-AI models...
+2024-11-26 13:17:49,881 [INFO] Completed duplicating primary nouns and named entities for Non-AI models.
+2024-11-26 13:17:49,882 [INFO] Duplicating primary nouns and named entities with weight=2.0 for AI models...
+2024-11-26 13:17:49,893 [INFO] Completed duplicating primary nouns and named entities for AI models.
+2024-11-26 13:17:49,894 [INFO] Calculating similarity metrics...
+2024-11-26 13:17:49,895 [INFO] Computing TF-IDF vectors on weighted descriptions (nonai)...
+2024-11-26 13:17:50,114 [INFO] Completed TF-IDF computation.
+2024-11-26 13:17:50,114 [INFO] Computing cosine similarity matrix...
+2024-11-26 13:17:50,166 [INFO] Completed cosine similarity computation.
+2024-11-26 13:17:50,167 [INFO] Computing Sentence-BERT similarity (nonai)...
+2024-11-26 13:17:50,172 [INFO] Use pytorch device_name: cpu
+2024-11-26 13:17:50,173 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-26 13:18:08,146 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-26 13:18:08,147 [INFO] Computing TF-IDF vectors on weighted descriptions (ai)...
+2024-11-26 13:18:08,218 [INFO] Completed TF-IDF computation.
+2024-11-26 13:18:08,219 [INFO] Computing cosine similarity matrix...
+2024-11-26 13:18:08,235 [INFO] Completed cosine similarity computation.
+2024-11-26 13:18:08,237 [INFO] Computing Sentence-BERT similarity (ai)...
+2024-11-26 13:18:08,242 [INFO] Use pytorch device_name: cpu
+2024-11-26 13:18:08,243 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-26 13:18:19,051 [INFO] Completed Sentence-BERT similarity computation.
+2024-11-26 13:18:19,052 [INFO] Computing tag similarity matrices using Jaccard similarity for Non-AI models...
+2024-11-26 13:18:19,745 [INFO] Completed tag similarity computation.
+2024-11-26 13:18:19,746 [INFO] Computing tag similarity matrices using Jaccard similarity for AI models...
+2024-11-26 13:18:19,937 [INFO] Completed tag similarity computation.
+2024-11-26 13:18:19,937 [INFO] Computing name similarity for all models...
+2024-11-26 13:18:19,940 [INFO] Computing name similarity using TF-IDF and cosine similarity...
+2024-11-26 13:18:19,961 [INFO] Completed name similarity computation.
+2024-11-26 13:18:19,963 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:19,974 [INFO] Threshold set at mean (0.0245) + 2*std (0.0437) = 0.1118
+2024-11-26 13:18:19,974 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:19,982 [INFO] Threshold set at mean (0.0064) + 2*std (0.0287) = 0.0639
+2024-11-26 13:18:19,983 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:19,990 [INFO] Threshold set at mean (0.3394) + 2*std (0.1204) = 0.5803
+2024-11-26 13:18:19,991 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:20,011 [INFO] Threshold set at mean (0.0171) + 2*std (0.0490) = 0.1150
+2024-11-26 13:18:20,013 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:20,017 [INFO] Threshold set at mean (0.0380) + 2*std (0.0515) = 0.1409
+2024-11-26 13:18:20,018 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:20,021 [INFO] Threshold set at mean (0.0023) + 2*std (0.0168) = 0.0360
+2024-11-26 13:18:20,022 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:20,025 [INFO] Threshold set at mean (0.4552) + 2*std (0.1165) = 0.6881
+2024-11-26 13:18:20,026 [INFO] Determining threshold based on mean + 2*std of similarity scores...
+2024-11-26 13:18:20,046 [INFO] Threshold set at mean (0.0171) + 2*std (0.0490) = 0.1150
+2024-11-26 13:18:20,048 [INFO] Constructing knowledge graph with embeddings...
+2024-11-26 13:18:20,049 [INFO] Creating Non-AI nodes in Neo4j with embeddings...
+2024-11-26 13:18:20,053 [INFO] Use pytorch device_name: cpu
+2024-11-26 13:18:20,054 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-26 13:18:43,448 [INFO] Completed creating Non-AI nodes with embeddings in Neo4j.
+2024-11-26 13:18:43,452 [INFO] Creating AI nodes in Neo4j with embeddings...
+2024-11-26 13:18:43,455 [INFO] Use pytorch device_name: cpu
+2024-11-26 13:18:43,457 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2024-11-26 13:18:55,672 [INFO] Completed creating AI nodes with embeddings in Neo4j.
+2024-11-26 13:18:55,676 [INFO] Creating Non-AI similarity edges in Neo4j in batches...
+2024-11-26 13:18:55,678 [INFO] Processing Non-AI relationship type: SIMILAR_SUMMARY_NONAI
+2024-11-26 13:19:46,109 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:20:36,650 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:21:27,508 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:22:16,384 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:23:05,777 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:23:53,580 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:24:41,303 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:25:27,347 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:26:15,012 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:27:01,679 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:27:49,921 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:28:35,323 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:29:20,512 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:30:05,817 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:30:51,393 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:31:36,664 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:32:01,577 [INFO] Inserted final batch of 548 relationships for SIMILAR_SUMMARY_NONAI.
+2024-11-26 13:32:01,578 [INFO] Total edges created for SIMILAR_SUMMARY_NONAI: 16548
+2024-11-26 13:32:01,579 [INFO] Processing Non-AI relationship type: SIMILAR_TAGS_NONAI
+2024-11-26 13:32:49,008 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:33:34,137 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:34:20,787 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:35:07,409 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:35:53,243 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:36:40,843 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:37:28,422 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:38:19,002 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:39:06,180 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:39:51,685 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:40:39,728 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:41:26,156 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:42:14,715 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:43:04,935 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:43:55,640 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:44:43,181 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:45:31,218 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:46:19,219 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:46:23,446 [INFO] Inserted final batch of 88 relationships for SIMILAR_TAGS_NONAI.
+2024-11-26 13:46:23,448 [INFO] Total edges created for SIMILAR_TAGS_NONAI: 18088
+2024-11-26 13:46:23,449 [INFO] Processing Non-AI relationship type: SIMILAR_EMBEDDING_NONAI
+2024-11-26 13:47:13,589 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:48:01,726 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:48:51,176 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:49:38,293 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:50:26,799 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:51:17,779 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:52:06,541 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:52:55,207 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:53:33,012 [INFO] Inserted final batch of 761 relationships for SIMILAR_EMBEDDING_NONAI.
+2024-11-26 13:53:33,013 [INFO] Total edges created for SIMILAR_EMBEDDING_NONAI: 8761
+2024-11-26 13:53:33,013 [INFO] Processing Non-AI relationship type: SIMILAR_NAMES_ALL
+2024-11-26 13:54:25,005 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:55:13,226 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:56:00,540 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:56:48,458 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:57:36,465 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:58:24,250 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:59:11,237 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 13:59:57,946 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:00:45,145 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:01:33,758 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:02:22,217 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:03:09,836 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:04:00,550 [INFO] Inserted batch of 1000 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:04:24,445 [INFO] Inserted final batch of 516 relationships for SIMILAR_NAMES_ALL.
+2024-11-26 14:04:24,447 [INFO] Total edges created for SIMILAR_NAMES_ALL: 13516
+2024-11-26 14:04:24,449 [INFO] Completed Non-AI edge creation in Neo4j.
+2024-11-26 14:04:24,451 [INFO] Creating AI similarity edges in Neo4j in batches...
+2024-11-26 14:04:24,454 [INFO] Processing AI relationship type: SIMILAR_SUMMARY_AI
+2024-11-26 14:05:12,517 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:06:01,558 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:06:50,172 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:07:38,033 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:08:26,484 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:09:13,865 [INFO] Inserted batch of 1000 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:09:18,801 [INFO] Inserted final batch of 100 relationships for SIMILAR_SUMMARY_AI.
+2024-11-26 14:09:18,803 [INFO] Total edges created for SIMILAR_SUMMARY_AI: 6100
+2024-11-26 14:09:18,803 [INFO] Processing AI relationship type: SIMILAR_TAGS_AI
+2024-11-26 14:10:06,614 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-26 14:10:56,086 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-26 14:11:44,613 [INFO] Inserted batch of 1000 relationships for SIMILAR_TAGS_AI.
+2024-11-26 14:11:46,176 [INFO] Inserted final batch of 32 relationships for SIMILAR_TAGS_AI.
+2024-11-26 14:11:46,178 [INFO] Total edges created for SIMILAR_TAGS_AI: 3032
+2024-11-26 14:11:46,179 [INFO] Processing AI relationship type: SIMILAR_EMBEDDING_AI
+2024-11-26 14:12:34,489 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-26 14:13:19,764 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-26 14:14:05,097 [INFO] Inserted batch of 1000 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-26 14:14:16,883 [INFO] Inserted final batch of 257 relationships for SIMILAR_EMBEDDING_AI.
+2024-11-26 14:14:16,884 [INFO] Total edges created for SIMILAR_EMBEDDING_AI: 3257
+2024-11-26 14:14:16,885 [INFO] Completed AI edge creation in Neo4j.
+2024-11-26 14:14:16,886 [INFO] Pruning graph edges based on similarity thresholds...
+2024-11-26 14:14:17,386 [INFO] Pruned edges of type SIMILAR_SUMMARY_NONAI below threshold 0.11181324175307887.
+2024-11-26 14:14:17,710 [INFO] Pruned edges of type SIMILAR_TAGS_NONAI below threshold 0.06386230841430725.
+2024-11-26 14:14:17,837 [INFO] Pruned edges of type SIMILAR_EMBEDDING_NONAI below threshold 0.5802618116140366.
+2024-11-26 14:14:18,054 [INFO] Pruned edges of type SIMILAR_NAMES_ALL below threshold 0.11499804157089621.
+2024-11-26 14:14:18,274 [INFO] Pruned edges of type SIMILAR_SUMMARY_AI below threshold 0.1408808680914183.
+2024-11-26 14:14:18,369 [INFO] Pruned edges of type SIMILAR_TAGS_AI below threshold 0.0359668147317035.
+2024-11-26 14:14:18,464 [INFO] Pruned edges of type SIMILAR_EMBEDDING_AI below threshold 0.6880883276462555.
+2024-11-26 14:14:18,465 [INFO] Completed pruning of graph edges.
+2024-11-26 14:14:18,466 [INFO] Performing node clustering using NetworkX and Louvain method for summary_nonai...
+2024-11-26 14:14:18,904 [INFO] Detected 17 communities for summary_nonai.
+2024-11-26 14:14:18,905 [INFO] Updating Neo4j nodes with community labels...
+2024-11-26 14:14:19,602 [INFO] Completed updating community labels in Neo4j for summary_nonai.
+2024-11-26 14:14:19,603 [INFO] Performing node clustering using NetworkX and Louvain method for tags_nonai...
+2024-11-26 14:14:20,120 [INFO] Detected 109 communities for tags_nonai.
+2024-11-26 14:14:20,122 [INFO] Updating Neo4j nodes with community labels...
+2024-11-26 14:14:20,820 [INFO] Completed updating community labels in Neo4j for tags_nonai.
+2024-11-26 14:14:20,820 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_nonai...
+2024-11-26 14:14:21,272 [INFO] Detected 141 communities for embedding_nonai.
+2024-11-26 14:14:21,273 [INFO] Updating Neo4j nodes with community labels...
+2024-11-26 14:14:21,911 [INFO] Completed updating community labels in Neo4j for embedding_nonai.
+2024-11-26 14:14:21,911 [INFO] Performing node clustering using NetworkX and Louvain method for names_all...
+2024-11-26 14:14:21,924 [ERROR] Error during node clustering for names_all: list index out of range
+2024-11-26 14:14:21,925 [INFO] Performing node clustering using NetworkX and Louvain method for summary_ai...
+2024-11-26 14:14:22,100 [INFO] Detected 11 communities for summary_ai.
+2024-11-26 14:14:22,101 [INFO] Updating Neo4j nodes with community labels...
+2024-11-26 14:14:22,507 [INFO] Completed updating community labels in Neo4j for summary_ai.
+2024-11-26 14:14:22,507 [INFO] Performing node clustering using NetworkX and Louvain method for tags_ai...
+2024-11-26 14:14:22,635 [INFO] Detected 59 communities for tags_ai.
+2024-11-26 14:14:22,636 [INFO] Updating Neo4j nodes with community labels...
+2024-11-26 14:14:23,073 [INFO] Completed updating community labels in Neo4j for tags_ai.
+2024-11-26 14:14:23,073 [INFO] Performing node clustering using NetworkX and Louvain method for embedding_ai...
+2024-11-26 14:14:23,254 [INFO] Detected 117 communities for embedding_ai.
+2024-11-26 14:14:23,255 [INFO] Updating Neo4j nodes with community labels...
+2024-11-26 14:14:23,700 [INFO] Completed updating community labels in Neo4j for embedding_ai.
+2024-11-26 14:14:23,701 [INFO] Creating 'SIMILAR_NAMES' relationships based on extracted names...
+2024-11-26 14:14:26,321 [INFO] Inserted total 'SIMILAR_NAMES' relationships: 55
+2024-11-26 14:14:26,321 [INFO] Knowledge graph construction complete.

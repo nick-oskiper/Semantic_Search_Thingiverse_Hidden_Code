@@ -1,0 +1,2 @@
+average_precision,average_recall,average_f1_score,average_ndcg@20,precision_std,recall_std,f1_score_std,ndcg_std@20
+0.6170212765957447,0.7073170731707317,0.6590909090909092,0.8797513670064709,0.0,0.0,0.0,0.0
